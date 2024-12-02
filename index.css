@@ -53,4 +53,59 @@ input[type="number"]
     height: 40px;
     border-radius: 10px;
 }
-  
+@media (max-width: 1024px) {
+    .guess {
+        width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
+    .guess h2, h4 {
+        font-size: 24px;
+    }
+
+    .con1 {
+        gap: 10px;
+    }
+
+    input[type="number"],
+    .guess button {
+        width: 80px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) { 
+    .guess {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .guess h2, h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .con1 {
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    input[type="number"],
+    .guess button {
+        width: 70px;
+        height: 35px;
+    }
+
+    .att {
+        font-size: medium;
+        text-align: center;
+    }
+}
